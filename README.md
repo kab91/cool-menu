@@ -1,1 +1,1 @@
-# cool-menu
+Cool menu for your mobile website.
