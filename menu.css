@@ -1,24 +1,24 @@
 html, body {
-	margin: 0;
-	padding: 0;
-	font-family: Helvetica, Arial, sans-serif;
-	height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    height: 100%;
 }
 
 #page-wrapper {
-	position: relative;
-	z-index: 20; /* Should be greater than menu z-index */
-	padding: 10px 20px;
-	background: #fff;
-	height: 100%;
+    position: relative;
+    z-index: 20; /* Should be greater than menu z-index */
+    padding: 10px 20px;
+    background: #fff;
+    height: 100%;
 }
 
 #page-wrapper h1 {
-	margin: 0;
+    margin: 0;
 }
 
 #cool-menu-toggle {
-	position: absolute;
+    position: absolute;
     top: 10px;
     right: 10px;
     padding: 10px;
@@ -27,54 +27,54 @@ html, body {
 }
 
 #cool-menu {
-	display: none;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	right: 0;
+    display: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
 
-	width: 190px;
-	padding: 15px 25px;
-	margin: 0;
+    width: 190px;
+    padding: 15px 25px;
+    margin: 0;
 
-	list-style: none;
-	background: #333;
-	z-index: 10; /* Should be lower than menu z-index */
+    list-style: none;
+    background: #333;
+    z-index: 10; /* Should be lower than menu z-index */
 }
 
 #cool-menu a {
-	display: block;
-	color: #fff;
-	padding: 15px 0;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    display: block;
+    color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 /* Animations */
 
 #page-wrapper, #cool-menu {
-	-webkit-backface-visibility: hidden;
-	-webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
 }
 
 .animating #cool-menu, .menu-visible #cool-menu {
-	display: block;
+    display: block;
 }
 
 .animating #page-wrapper {
-	transition: transform .25s ease-in-out; /* 250ms transition to page */
-	-webkit-transition: -webkit-transform .25s ease-in-out;
+    transition: transform .25s ease-in-out; /* 250ms transition to page */
+    -webkit-transition: -webkit-transform .25s ease-in-out;
 }
 
 .animating.left #page-wrapper {
-	transform: translate3d(-240px, 0, 0 ); /* move page to left */
-	-webkit-transform: translate3d(-240px, 0, 0);
+    transform: translate3d(-240px, 0, 0); /* move page to left */
+    -webkit-transform: translate3d(-240px, 0, 0);
 }
 
 .animating.right #page-wrapper {
-	transform: translate3d(240px, 0, 0); /* move page to right */
-	-webkit-transform: translate3d(240px, 0, 0);
+    transform: translate3d(240px, 0, 0); /* move page to right */
+    -webkit-transform: translate3d(240px, 0, 0);
 }
 
 .menu-visible #page-wrapper {
-	right: 240px;
+    right: 240px;
 }
